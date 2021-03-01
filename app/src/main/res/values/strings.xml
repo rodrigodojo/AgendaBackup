@@ -16,4 +16,9 @@
     <string name="endere_o">Endereço:</string>
     <string name="email">Email:</string>
     <string name="todo">TODO</string>
+    <string name="nomecelula">nomeCelula</string>
+    <string name="telefonecelula">telefoneCelula</string>
+    <string name="emailcelula">emailCelula</string>
+    <string name="enderecocelula">enderecoCelula</string>
+    <string name="sitecelula">siteCelula</string>
 </resources>

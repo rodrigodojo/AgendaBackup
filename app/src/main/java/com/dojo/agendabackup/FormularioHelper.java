@@ -45,7 +45,7 @@ public class FormularioHelper {
         return contato;
     }
 
-    public void colocaNoFormulario(){
+    public void colocaNoFormulario(Contato contato){
         nome.setText(contato.getNome());
         email.setText(contato.getEmail());
         endereco.setText(contato.getEndereco());
@@ -53,6 +53,8 @@ public class FormularioHelper {
         telefone.setText(contato.getTelefone());
         imagemContato.setTag(contato.getFoto());
         carregaImagem(contato.getFoto());
+
+        this.contato = contato;
     }
 
     public void carregaImagem(String localDaFoto){

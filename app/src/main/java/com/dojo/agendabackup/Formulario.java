@@ -39,6 +39,7 @@ public class Formulario extends AppCompatActivity {
         meuContato.setEndereco("Avenida");
         meuContato.setId(new Long(10));
 
+        /*
         Log.i("meu Log ",meuContato.getNome());
         Log.i("meu Log ",meuContato.getEmail());
         Log.i("meu Log ",meuContato.getSite());
@@ -46,6 +47,23 @@ public class Formulario extends AppCompatActivity {
         Log.i("meu Log ",meuContato.getEndereco());
         Log.i("meu Log ", String.valueOf(meuContato.getId()));
         Log.i("meu Log ",meuContato.toString());
+         */
+
+        FormularioHelper helper = new FormularioHelper(this);
+        helper.colocaNoFormulario(meuContato);
+
+        Contato meuContato2 = new Contato();
+
+        meuContato2 = helper.pegaContatoDoFormulario();
+
+        Log.i("meu Log ",meuContato2.getNome());
+        Log.i("meu Log ",meuContato2.getEmail());
+        Log.i("meu Log ",meuContato2.getSite());
+        Log.i("meu Log ",meuContato2.getTelefone());
+        Log.i("meu Log ",meuContato2.getEndereco());
+        Log.i("meu Log ", String.valueOf(meuContato2.getId()));
+        Log.i("meu Log ",meuContato2.toString());
+
 
     }
 
